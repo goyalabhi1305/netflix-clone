@@ -1,0 +1,32 @@
+.row{
+    margin-left: 20px;
+}
+.img_poster{
+    width: 100%;
+    object-fit: contain;
+    height: 100px;
+    scroll-snap-align: start;
+    max-height: 200px;
+    transition: transform 400ms;
+    margin-right: 10px;
+}
+.img_poster:hover{
+    transform: scale(1.09);
+    opacity: 1;
+    box-shadow: 0px 0px 3px  #909090;
+}
+.row_poster{
+    scroll-snap-type: y mandatory;
+    /* height: 300px; */
+    padding: 30px;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    display: flex;
+}
+.large_img{
+    height: 250px;
+}
+.large_img:hover{
+    transform: scale(1.1);
+}
+.row ::-webkit-scrollbar{display: none;}
